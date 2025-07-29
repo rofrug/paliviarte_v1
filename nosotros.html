@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paliviarte | Nosotros</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+
+<body class="bg-white text-grispa">
+
+    <div id="header"></div>
+
+    <!-- HERO NOSOTROS -->
+    <section id="hero-nosotros"
+        class="relative h-[100svh] w-full overflow-hidden flex items-center justify-center px-4">
+        <!-- Imagen de fondo -->
+        <img src="assets/img/hero3.png"
+            class="absolute inset-0 w-full h-full object-cover object-[24%_center] md:object-center"
+            alt="Equipo Paliviarte" />
+
+        <!-- Contenido principal -->
+        <div class="relative z-20 max-w-4xl text-center text-white px-4 space-y-6 animate-fadeIn">
+            <!-- Ícono decorativo animado -->
+            <div class="text-white text-5xl animate-bounce-slow">
+                <i data-lucide="hand-heart" class="inline-block w-12 h-12"></i>
+            </div>
+            <!-- Título con enfoque humano -->
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight drop-shadow-md">
+                Somos personas cuidando personas
+            </h1>
+            <!-- Enlace con flechas animadas -->
+            <div class="mt-8">
+                <p class="text-moradopa font-bold text-lg bg-white mb-4">Conoce más sobre nosotros</p>
+                <div class="flex justify-center items-center gap-3 text-white text-2xl">
+                    <i data-lucide="chevron-down" class="animate-bounce-delay-1"></i>
+                    <i data-lucide="chevron-down" class="animate-bounce-delay-2"></i>
+                    <i data-lucide="chevron-down" class="animate-bounce-delay-3"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curva inferior -->
+        <svg class="absolute -bottom-12 left-0 w-full z-10" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,240L60,230C120,220,240,210,360,205C480,200,600,200,720,215C840,230,960,260,1080,260C1200,260,1320,240,1380,230L1440,220L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- Nuestra historia -->
+    <section id="historia" class="pt-10 pb-0 md:pb-0 lg:pb-0 bg-white text-grispa scroll-mt-20" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-once="false">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10" data-aos="fade-down">
+                <h2 class="text-3xl md:text-4xl font-bold text-moradopa mb-2">Nuestra historia</h2>
+                <div class="w-16 h-1 bg-celestepa mx-auto rounded-full"></div>
+            </div>
+            <div id="timelineWrapper" class="relative" data-aos="fade-up" data-aos-delay="300">
+                <!-- Botón izquierdo -->
+                <button id="prevBtn"
+                    class="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg border border-grispa text-moradopa hover:bg-celestepa hover:text-white transition-colors rounded-full w-10 h-10 items-center justify-center">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+                <!-- Botón derecho -->
+                <button id="nextBtn"
+                    class="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg border border-grispa text-moradopa hover:bg-celestepa hover:text-white transition-colors rounded-full w-10 h-10 items-center justify-center">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+                <!-- Carrusel -->
+                <div id="timelineScroll"
+                    class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth px-4 pb-6 space-x-6 scrollbar-none [&::-webkit-scrollbar]:hidden relative z-10 max-w-full md:max-w-5xl mx-auto">
+                    <!-- Espaciador inicial -->
+                    <div class="min-w-[calc(50%-160px)] flex-shrink-0 hidden md:block relative">
+                        <img src="assets/img/icono-colores.png" alt="Decoración inicio"
+                            class="absolute inset-0 w-full h-full object-contain" />
+                    </div>
+                    <!-- Hito 1 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-celestepa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <i data-lucide="sparkles" class="w-6 h-6"></i>
+                                <h3 class="font-bold text-lg">Nacimiento</h3>
+                            </div>
+                            <p class="text-justify">Paliviarte nace durante la pandemia con la visión del Dr. Jorge
+                                Ramírez para humanizar el cuidado paliativo.</p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2021</span>
+                        </div>
+                    </div>
+                    <!-- Hito 2 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-moradoclaropa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <div class="text-4xl"><i data-lucide="hospital"></i></div>
+                                <h3 class="font-bold text-lg">Primeros pacientes</h3>
+                            </div>
+                            <p class="text-justify">Se inicia atención domiciliaria con pacientes del Hospital Cayetano
+                                Heredia.</p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2021 - Mediados</span>
+                        </div>
+                    </div>
+                    <!-- Hito 3 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-celesteclaropa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <div class="text-4xl"><i data-lucide="hospital"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">Equipo multidisciplinario</h3>
+                            </div>
+
+                            <p class="text-justify">Médicos, enfermeros y psicólogos se integran bajo un enfoque
+                                humanizado y
+                                solidario.
+                            </p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2022</span>
+                        </div>
+                    </div>
+                    <!-- Hito 4 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-moradopa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <div class="text-4xl"><i data-lucide="hand-heart"></i></div>
+                                <h3 class="font-bold text-lg">Filosofía de amor</h3>
+                            </div>
+                            <p class="text-justify">Cuidar con amor se convierte en el valor central del servicio hacia
+                                nuestros pacientes.
+                            </p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2023</span>
+                        </div>
+                    </div>
+                    <!-- Hito 5 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-celestepa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <div class="text-4xl"><i data-lucide="map-pin"></i></div>
+                                <h3 class="font-bold text-lg">Expansión Lima</h3>
+                            </div>
+                            <p class="text-justify">Paliviarte amplía su cobertura a toda Lima Metropolitana, llegando a
+                                todos nuestros pacientes.</p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2023 - Finales</span>
+                        </div>
+                    </div>
+                    <!-- Hito 6 -->
+                    <div
+                        class="min-w-[280px] max-w-xs flex-shrink-0 snap-center flex flex-col items-center relative transition-transform duration-500 transform scale-90">
+                        <div class="text-white p-6 rounded-xl shadow-lg text-center space-y-3 bg-moradopa">
+                            <div class="flex items-center gap-3 justify-start">
+                                <div class="text-4xl"><i data-lucide="milestone"></i></div>
+                                <h3 class="font-bold text-lg">Consolidación</h3>
+                            </div>
+                            <p class="text-justify">Reconocidos por nuestro compromiso con la vida, el alivio y la
+                                dignidad de nuestros pacientes.
+                            </p>
+                            <span class="text-xs font-semibold opacity-100 block mt-2">2024 - Actualidad</span>
+                        </div>
+                    </div>
+                    <!-- Espaciador final con imagen -->
+                    <div class="min-w-[calc(50%-160px)] flex-shrink-0 hidden md:block relative">
+                        <img src="assets/img/doc-chipi.JPG" alt="Decoración final"
+                            class="absolute inset-0 w-full h-full object-contain" />
+                    </div>
+                </div>
+                <div id="timelineDots" class="flex justify-center mt-3 mb-6 gap-2 sm:gap-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores con curva superior -->
+    <section id="valores"
+        class="relative pt-28 md:pt-[180px] pb-20 bg-gradient-to-r from-celestepa to-moradopa text-white scroll-mt-20 overflow-hidden"
+        data-aos="fade-up" data-aos-delay="200" data-aos-once="false">
+        <!-- Curva blanca superior -->
+        <svg class="absolute -top-48 left-0 w-full z-0" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,240L60,230C120,220,240,210,360,205C480,200,600,200,720,215C840,230,960,260,1080,260C1200,260,1320,240,1380,230L1440,220L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+
+        <div class="max-w-6xl md:max-w-[40%] mx-auto px-4 space-y-12 relative z-10" data-aos="zoom-in"
+            data-aos-delay="300">
+            <!-- Ícono decorativo animado -->
+            <div class="text-center text-white text-5xl animate-bounce-slow">
+                <i data-lucide="target" class="inline-block w-12 h-12"></i>
+            </div>
+
+            <!-- Título -->
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Misión, Visión y Valores</h2>
+                <div class="w-16 h-1 bg-white mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Contenido responsive -->
+            <div class="flex flex-col md:flex-row gap-8" data-aos="fade-up" data-aos-delay="500">
+                <!-- Tarjeta dinámica izquierda -->
+                <div class="flex-1 bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden text-white">
+                    <div class="flex">
+                        <button id="btnMision"
+                            class="w-1/2 py-3 font-semibold transition-colors rounded-tl-xl focus:outline-none active-tab">
+                            Misión
+                        </button>
+                        <button id="btnVision"
+                            class="w-1/2 py-3 font-semibold transition-colors rounded-tr-xl focus:outline-none inactive-tab">
+                            Visión
+                        </button>
+                    </div>
+                    <div id="contentCard"
+                        class="p-6 text-base text-justify leading-relaxed space-y-4 transition-opacity duration-300 opacity-100 bg-white/30">
+                        <p>
+                            Ofrecer cuidados paliativos especializados que combinen excelencia médica, apoyo emocional y
+                            acompañamiento integral, respetando la individualidad de cada paciente y sus familias.
+                            Nos comprometemos a brindar un entorno de confianza y empatía que facilite el bienestar
+                            físico, emocional y espiritual en cada etapa del cuidado del paciente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Valores derecha -->
+                <div class="flex-1 bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg space-y-4 text-left"
+                    data-aos="fade-left" data-aos-delay="600">
+                    <h3 class="font-semibold text-white text-xl flex items-center gap-2">
+                        <i data-lucide="gem" class="w-6 h-6"></i> Valores
+                    </h3>
+                    <ul class="list-disc list-inside text-lg space-y-1">
+                        <li><strong>Empatía:</strong> Comprender las necesidades únicas de cada paciente.</li>
+                        <li><strong>Calidez:</strong> Trato amable que inspire tranquilidad y confianza.</li>
+                        <li><strong>Respeto:</strong> Valoración de la dignidad y creencias de cada persona.</li>
+                        <li><strong>Vocación al servicio:</strong> Compromiso y dedicación al alivio del sufrimiento.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="equipo" class="bg-gray-50 py-16" data-aos="fade-up" data-aos-delay="200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20" data-aos="fade-down">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Nuestro Equipo</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Contamos con <span class="text-moradopa font-semibold">profesionales</span>
+                    multidisciplinarios comprometidos con tu bienestar y el de tu familia.
+                </p>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+
+                <!-- Tarjeta 1 -->
+                <div class="group relative cursor-pointer mb-16">
+                    <div
+                        class="relative w-[80%] mx-auto aspect-square mb-6 transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+                        <!-- Fondo -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-[110%] bg-gradient-to-br from-moradoclaropa to-celesteclaropa rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300 z-0">
+                        </div>
+
+                        <!-- Logos redes con animación secuencial -->
+                        <div
+                            class="absolute top-1/2 left-[-3rem] -translate-y-1/2 flex flex-col gap-4 opacity-0 group-hover:opacity-100 group-hover:left-[-1rem] transition-all duration-500 z-20">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-500 transition-all duration-300 delay-75">
+                                <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-700 transition-all duration-300 delay-150">
+                                <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-orange-600 transition-all duration-300 delay-300">
+                                <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+
+                        <!-- Imagen -->
+                        <img src="assets/img/docnutri.PNG" alt="Dr Dina Voluarte"
+                            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[110%] h-auto object-contain z-10" />
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dr Dina Voluarte</h3>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">
+                            Especialista en cuidados paliativos
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="group relative cursor-pointer mb-16">
+                    <div
+                        class="relative w-[80%] mx-auto aspect-square mb-6 transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+                        <!-- Fondo -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-[110%] bg-gradient-to-br from-moradopa to-celestepa rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300 z-0">
+                        </div>
+
+                        <!-- Logos redes con animación secuencial -->
+                        <div
+                            class="absolute top-1/2 left-[-3rem] -translate-y-1/2 flex flex-col gap-4 opacity-0 group-hover:opacity-100 group-hover:left-[-1rem] transition-all duration-500 z-20">
+                            <a href="https://www.facebook.com/dr.jorge.ramirez.flores" target="_blank"
+                                aria-label="Facebook"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-500 transition-all duration-300 delay-75">
+                                <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-700 transition-all duration-300 delay-150">
+                                <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dr.jorge.ramirez.flores/" target="_blank"
+                                aria-label="Instagram"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-orange-600 transition-all duration-300 delay-300">
+                                <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+
+                        <!-- Imagen -->
+                        <img src="assets/img/docjorge.PNG" alt="Dr Jorge Ramirez"
+                            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[110%] h-auto object-contain z-10" />
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dr Jorge Ramirez</h3>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">
+                            Especialista en cuidados paliativos con más de 15 años de experiencia
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="group relative cursor-pointer mb-16">
+                    <div
+                        class="relative w-[80%] mx-auto aspect-square mb-6 transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2">
+                        <!-- Fondo -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-[110%] bg-gradient-to-br from-celesteclaropa to-moradoclaropa rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300 z-0">
+                        </div>
+
+                        <!-- Logos redes con animación secuencial -->
+                        <div
+                            class="absolute top-1/2 left-[-3rem] -translate-y-1/2 flex flex-col gap-4 opacity-0 group-hover:opacity-100 group-hover:left-[-1rem] transition-all duration-500 z-20">
+                            <a href="https://www.facebook.com/dr.jorge.ramirez.flores" target="_blank"
+                                aria-label="Facebook"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-500 transition-all duration-300 delay-75">
+                                <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-blue-700 transition-all duration-300 delay-150">
+                                <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dr.jorge.ramirez.flores/" target="_blank"
+                                aria-label="Instagram"
+                                class="icon-anim bg-moradopa p-2 rounded-full shadow hover:bg-orange-600 transition-all duration-300 delay-300">
+                                <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+
+                        <!-- Imagen -->
+                        <img src="assets/img/docenf.PNG" alt="Dr Zhenia Karina Sáenz"
+                            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[110%] h-auto object-contain z-10" />
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dr Zhenia Karina Sáenz</h3>
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">
+                            Enfermera especialista en Oncología, Magíster en Gestión de los Servicios de la Salud
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Visítanos -->
+    <section id="ubicacion" class="relative h-[650px] overflow-hidden scroll-mt-20" data-aos="zoom-in"
+        data-aos-duration="1000">
+        <!-- Mapa como fondo interactivo -->
+        <div class="absolute inset-0 z-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.49875091589!2d-77.0709938!3d-12.0779701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c90fb7da0d63%3A0xd36671fd7d588b9d!2sAv.%20Manuel%20Cipriano%20Dulanto%201447%2C%20Pueblo%20Libre%2015084!5e0!3m2!1ses-419!2spe!4v1753248955709!5m2!1ses-419!2spe"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+        </div>
+
+        <!-- Contenido superpuesto -->
+        <div class="relative z-20 h-full flex items-center pointer-events-none">
+            <!-- pointer-events-none: evita bloquear el mapa -->
+            <div class="max-w-4xl mx-auto px-4 w-full pointer-events-auto">
+                <div class="bg-grispa/60 rounded-xl shadow-lg p-4 md:p-8 space-y-6 text-center max-w-sm md:max-w-full mx-auto"
+                    data-aos="fade-up">
+                    <!-- Título -->
+                    <div>
+                        <h2 class="text-2xl md:text-4xl font-bold text-white">¿Dónde estamos?</h2>
+                    </div>
+
+                    <!-- Dirección y horario -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-4 text-left text-sm md:text-lg">
+                        <div class="space-y-2 md:space-y-3 md:text-left">
+                            <h3 class="text-lg md:text-xl font-bold text-white">Dirección:</h3>
+                            <p class="text-white leading-relaxed">
+                                Av. Manuel Cipriano Dulanto 1447<br>
+                                Pueblo Libre, Lima - Perú
+                            </p>
+                        </div>
+                        <div class="space-y-2 md:space-y-3">
+                            <h3 class="text-lg md:text-xl font-bold text-white">Horario de atención:</h3>
+                            <p class="text-white leading-relaxed">
+                                Lunes a Sábado<br>9:00 a.m. – 7:00 p.m.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="mt-6">
+                        <a href="https://maps.app.goo.gl/jNWeywfF2S4tdric7" target="_blank"
+                            class="inline-block bg-celestepa text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-moradopa transition text-sm md:text-base">
+                            Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+
+    <script src="src/js/componentes.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollEl = document.getElementById("timelineScroll");
+            const cards = scrollEl.querySelectorAll(".snap-center");
+            const dotsContainer = document.getElementById("timelineDots");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            let currentIndex = 0;
+
+            // Crear puntos
+            cards.forEach((_, i) => {
+                const dot = document.createElement("div");
+                dot.className = "w-3 h-3 rounded-full bg-grispa opacity-50 hover:opacity-100 transition-all cursor-pointer";
+                dot.addEventListener("click", () => {
+                    scrollToIndex(i);
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const scrollToIndex = (index) => {
+                const item = cards[index];
+                if (item) {
+                    const scrollCenter = scrollEl.offsetWidth / 2;
+                    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+                    const scrollPosition = itemCenter - scrollCenter;
+
+                    scrollEl.scrollTo({
+                        left: scrollPosition,
+                        behavior: "smooth"
+                    });
+                }
+            };
+
+
+            const updateFocus = () => {
+                let closestIndex = 0;
+                let minDistance = Infinity;
+
+                cards.forEach((card, i) => {
+                    const rect = card.getBoundingClientRect();
+                    const center = window.innerWidth / 2;
+                    const dist = Math.abs(rect.left + rect.width / 2 - center);
+                    if (dist < minDistance) {
+                        minDistance = dist;
+                        closestIndex = i;
+                    }
+                });
+
+                currentIndex = closestIndex;
+
+                cards.forEach((card, i) => {
+                    card.classList.toggle("scale-100", i === closestIndex);
+                    card.classList.toggle("scale-90", i !== closestIndex);
+                });
+
+                dotsContainer.querySelectorAll("div").forEach((dot, i) => {
+                    dot.classList.toggle("bg-celestepa", i === closestIndex);
+                    dot.classList.toggle("opacity-100", i === closestIndex);
+                    dot.classList.toggle("opacity-50", i !== closestIndex);
+                });
+            };
+
+            scrollEl.addEventListener("scroll", updateFocus);
+            updateFocus();
+
+            // Botones de navegación en desktop
+            prevBtn?.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    scrollToIndex(currentIndex - 1);
+                }
+            });
+
+            nextBtn?.addEventListener("click", () => {
+                if (currentIndex < cards.length - 1) {
+                    scrollToIndex(currentIndex + 1);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

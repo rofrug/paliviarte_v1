@@ -1,0 +1,138 @@
+<!-- FONDO OSCURO GLOBAL -->
+<div id="darkOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden"></div>
+<header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 text-base md:text-lg">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center">
+            <img src="assets/img/logo-paliviarte.png" alt="Paliviarte Logo" class="h-10 md:h-12 w-auto">
+        </a>
+
+        <!-- MENÚ HAMBURGUESA ANIMADA -->
+        <button id="mobileMenuBtn"
+            class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 focus:outline-none group">
+            <span
+                class="bar w-6 h-0.5 bg-white transition-all duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+            <span class="bar w-6 h-0.5 bg-white transition-all duration-300 group-[.open]:opacity-0"></span>
+            <span
+                class="bar w-6 h-0.5 bg-white transition-all duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+        </button>
+
+        <!-- NAVEGACIÓN DESKTOP -->
+        <nav class="space-x-8 hidden md:flex font-bold relative items-center ">
+            <!-- INICIO -->
+            <div class="relative inline-block">
+                <a href="index.html" id="link-inicio"
+                    class="nav-link flex items-center gap-1 text-white hover:text-moradopa transition-colors">
+                    Inicio
+                    <img id="toggle-inicio" src="assets/icons/down.svg" alt="desplegar"
+                        class="hidden w-5 h-5 inline-block transition-transform duration-300 [filter:invert(16%)_sepia(44%)_saturate(7492%)_hue-rotate(262deg)_brightness(89%)_contrast(103%)]" />
+                </a>
+                <div id="submenu-inicio"
+                    class="hidden absolute left-0 mt-2 bg-white text-celestepa shadow-lg rounded-md overflow-hidden z-50 w-80">
+                    <a href="#hero"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">Inicio</a>
+                    <a href="#que-es"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">Cuidados
+                        paliativos</a>
+                    <a href="#porque"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">¿Por qué
+                        elegirnos?</a>
+                    <a href="#servicios"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">Servicios</a>
+                    <a href="#testimonios"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">Testimonios</a>
+                </div>
+
+            </div>
+
+            <!-- NOSOTROS -->
+            <div class="relative inline-block">
+                <a href="nosotros.html" id="link-nosotros"
+                    class="nav-link flex items-center gap-1 text-white hover:text-moradopa transition-colors">
+                    Nosotros
+                    <img id="toggle-nosotros" src="assets/icons/down.svg" alt="desplegar"
+                        class="hidden w-5 h-5 inline-block transition-transform duration-300 [filter:invert(16%)_sepia(44%)_saturate(7492%)_hue-rotate(262deg)_brightness(89%)_contrast(103%)]" />
+                </a>
+                <div id="submenu-nosotros"
+                    class="hidden absolute left-0 mt-2 bg-white text-celestepa shadow-lg rounded-md overflow-hidden z-50 w-80">
+
+                    <a href="#historia"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">
+                        Nuestra historia
+                    </a>
+                    <a href="#valores"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">
+                        Misión, visión y valores
+                    </a>
+                    <a href="#equipo"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">
+                        Nuestro equipo
+                    </a>
+                    <a href="#ubicacion" class="block px-4 py-3 hover:bg-celestepa hover:text-white">
+                        Ubicación
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICIOS -->
+            <div class="relative inline-block">
+                <a href="servicios.html" id="link-servicios"
+                    class="nav-link flex items-center gap-1 text-white hover:text-moradopa transition-colors">
+                    Servicios
+                    <img id="toggle-servicios" src="assets/icons/down.svg" alt="desplegar"
+                        class="hidden w-5 h-5 inline-block transition-transform duration-300 [filter:invert(16%)_sepia(44%)_saturate(7492%)_hue-rotate(262deg)_brightness(89%)_contrast(103%)]" />
+                </a>
+                <div id="submenu-servicios"
+                    class="hidden absolute left-0 mt-2 bg-white text-celestepa shadow-lg rounded-md overflow-hidden z-50 w-104">
+
+                    <a href="#individuales"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">
+                        Servicios individuales
+                    </a>
+                    <a href="#planes"
+                        class="block px-4 py-3 hover:bg-celestepa hover:text-white border-b border-gray-200">
+                        Planes
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BOTÓN DESKTOP -->
+        <a href="https://wa.me/51904728310?text=Hola%20quisiera%20comunicarme%20con%20un%20asesor." target="_blank"
+            class="hidden md:inline-block font-bold bg-white text-celestepa px-5 py-3 rounded-lg hover:bg-moradopa hover:text-white transition-colors shadow-md">
+            Contáctanos
+        </a>
+    </div>
+
+    <!-- OVERLAY OSCURO -->
+    <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden"></div>
+
+
+    <!-- MENÚ MÓVIL DESDE ABAJO DEL HEADER -->
+    <div id="mobileMenu"
+        class="absolute rounded-bl-lg right-0 top-full w-1/2 min-h-[10rem] bg-white text-celestepa z-40 transform translate-x-full transition-transform duration-300 shadow-lg md:hidden">
+
+        <nav class="flex flex-col font-bold py-4">
+            <a href="index.html" id="mobile-inicio"
+                class="mobile-link px-4 py-3 border-b border-gray-200 hover:bg-celesteclaropa">Inicio</a>
+            <a href="nosotros.html" id="mobile-nosotros"
+                class="mobile-link px-4 py-3 border-b border-gray-200 hover:bg-celesteclaropa">Nosotros</a>
+            <a href="servicios.html" id="mobile-servicios"
+                class="mobile-link px-4 py-3 border-b border-gray-200 hover:bg-celesteclaropa">Servicios</a>
+
+            <!-- Botón separado al final -->
+            <div class="mt-1 px-4 pb-1">
+                <a href="https://wa.me/51904728310?text=Hola%20quisiera%20comunicarme%20con%20un%20asesor."
+                    target="_blank"
+                    class="block bg-moradopa text-white text-center py-2 rounded shadow-md hover:bg-celestepa hover:text-white transition">
+                    Contáctanos
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+</header>

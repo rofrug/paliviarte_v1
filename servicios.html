@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paliviarte | Servicios</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-grispa">
+
+    <div id="header"></div>
+
+    <!-- Hero Servicios -->
+    <section class="relative h-[80svh] flex items-center justify-center overflow-hidden" data-aos="fade-in"
+        data-aos-duration="1200">
+        <!-- Imagen de fondo -->
+        <img src="assets/img/hero-nosotross.png" alt="Atención y cuidado de calidad"
+            class="absolute inset-0 w-full h-full object-cover object-center z-0">
+
+        <!-- Sombra oscura -->
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <!-- Contenido -->
+        <div class="relative z-20 text-center max-w-3xl px-4" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                Nuestros Servicios
+            </h1>
+            <p class="text-lg md:text-xl text-white/90 mb-8">
+                Cuidamos cada detalle de tu bienestar y el de tu familia, con soluciones médicas y emocionales.
+            </p>
+            <a href="#individuales"
+                class="bg-celestepa text-white font-semibold px-6 py-3 rounded-lg hover:bg-moradopa transition-colors shadow-md"
+                data-aos="zoom-in" data-aos-delay="300">
+                Ver servicios individuales
+            </a>
+        </div>
+    </section>
+
+    <!-- Servicios Individuales -->
+    <section id="individuales" class="py-20 px-4 bg-white text-grispa scroll-mt-20" data-aos="fade-up"
+        data-aos-duration="1000">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-moradopa mb-4" data-aos="fade-down">Servicios Individuales
+            </h2>
+            <p class="text-lg text-grispa max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Nuestros servicios están diseñados para atender necesidades específicas de los pacientes y sus familias,
+                brindando soluciones rápidas y efectivas cuando más se necesitan.
+            </p>
+        </div>
+
+        <div id="serviciosContainer" class="max-w-6xl mx-auto space-y-20"></div>
+
+        <!-- Botón Ver más -->
+        <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
+            <button id="verMasBtn"
+                class="bg-celestepa text-white font-semibold px-6 py-3 rounded-lg hover:bg-moradopa transition">
+                Ver más
+            </button>
+        </div>
+    </section>
+
+    <!-- Planes -->
+    <section id="planes" class="py-20 px-4 bg-gradient-to-r from-celestepa to-moradopa text-white scroll-mt-20"
+        data-aos="fade-up" data-aos-duration="1000">
+        <!-- Encabezado -->
+        <div class="max-w-3xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-down">Planes de Atención</h2>
+            <p class="text-lg text-white/90" data-aos="fade-up" data-aos-delay="100">
+                Elige el plan que mejor se adapte a tus necesidades. Sin costos ocultos ni sorpresas.
+                Atención médica, soporte emocional y acompañamiento integral.
+            </p>
+        </div>
+
+        <!-- Contenedor de planes -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Plan Abrazo -->
+            <div data-plan="abrazo"
+                class="group bg-white text-grispa rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 p-8 flex flex-col relative"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-4 text-moradopa flex items-center gap-2">
+                    <i data-lucide="hand-heart" class="w-5 h-5 text-celestepa"></i> Plan Abrazo
+                </h3>
+                <p class="text-4xl font-extrabold text-celestepa mb-6">S/. 350.00</p>
+                <ul class="list-disc pl-5 space-y-3 mb-8 text-left leading-relaxed text-base marker:text-celestepa">
+                    <li><b>1 visita médica</b> a domicilio</li>
+                    <li><b>Evaluación integral</b> (recolección de datos e historia clínica)</li>
+                    <li><b>Plan de manejo paliativo</b> (receta, indicaciones y receta especial si es necesario)</li>
+                    <li><b>Estadiaje</b> de la enfermedad</li>
+                    <li><b>Educación</b> a pacientes, familiares y cuidadores</li>
+                </ul>
+                <a href="#plan-abrazo"
+                    class="mt-auto bg-celestepa text-white font-semibold rounded-full py-2 px-6 hover:bg-moradopa transition">
+                    Ver detalles
+                </a>
+            </div>
+
+            <!-- Plan Ritmo -->
+            <div data-plan="ritmo"
+                class="group bg-white text-grispa rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 p-8 flex flex-col relative"
+                data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-4 text-moradopa flex items-center gap-2">
+                    <i data-lucide="clock" class="w-5 h-5 text-celestepa"></i> Plan Ritmo
+                </h3>
+                <p class="text-4xl font-extrabold text-celestepa mb-6">S/. 560.00</p>
+                <ul class="list-disc pl-5 space-y-3 mb-8 text-left leading-relaxed text-base marker:text-celestepa">
+                    <li><b>2 visitas domiciliarias</b> por mes</li>
+                    <li><b>Seguimiento</b> y ajuste de tratamiento (comunicación posterior a cada atención)</li>
+                    <li><b>Plan de cuidado actualizado</b></li>
+                    <li><b>Línea directa</b> con el médico tratante (2 veces por semana)</li>
+                    <li><b>Orientación emocional</b> para paciente y cuidador</li>
+                </ul>
+                <a href="#plan-ritmo"
+                    class="mt-auto bg-celestepa text-white font-semibold rounded-full py-2 px-6 hover:bg-moradopa transition">Ver
+                    detalles</a>
+            </div>
+
+            <!-- Plan Nexo (Destacado) -->
+            <div data-plan="nexo"
+                class="group relative bg-gradient-to-b from-celestepa to-moradopa text-white rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 p-8 flex flex-col lg:col-span-1"
+                data-aos="fade-up" data-aos-delay="300">
+                <span
+                    class="absolute top-0 right-0 bg-white text-moradopa text-xs font-bold px-4 py-1 rounded-bl-lg flex items-center gap-1">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i> Más popular
+                </span>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="users" class="w-5 h-5"></i> Plan Nexo
+                </h3>
+                <p class="text-4xl font-extrabold mb-6">S/. 1,100.00</p>
+                <ul class="list-disc pl-5 space-y-3 mb-8 text-left leading-relaxed text-base marker:text-white">
+                    <li><b>4 visitas domiciliarias</b> por mes</li>
+                    <li><b>Control de síntomas complejos</b> y manejo del dolor</li>
+                    <li><b>Coordinación</b> con médicos tratantes</li>
+                    <li><b>Capacitación</b> al cuidador y familia en cuidados básicos</li>
+                    <li><b>Supervisión médica continua</b> en horarios establecidos</li>
+                    <li><b>Administración de medicamentos</b> por enfermera especializada (1 visita)</li>
+                </ul>
+                <a href="#plan-nexo"
+                    class="bg-white text-moradopa font-semibold rounded-full py-2 px-6 hover:bg-celestepa hover:text-white transition">Ver
+                    detalles</a>
+            </div>
+
+            <!-- Plan Presencia -->
+            <div data-plan="presencia"
+                class="group bg-white text-grispa rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 p-8 flex flex-col relative"
+                data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-xl font-bold mb-4 text-moradopa flex items-center gap-2">
+                    <i data-lucide="home" class="w-5 h-5 text-celestepa"></i> Plan Presencia
+                </h3>
+                <p class="text-4xl font-extrabold text-celestepa mb-6">S/. 1,800.00</p>
+                <ul class="list-disc pl-5 space-y-3 mb-8 text-left leading-relaxed text-base marker:text-celestepa">
+                    <li><b>8 visitas</b> al mes (2 por semana)</li>
+                    <li><b>Manejo avanzado</b> de síntomas</li>
+                    <li><b>1 atención virtual</b> por psicólogo o nutricionista al mes</li>
+                    <li><b>Acompañamiento</b> en situaciones complejas (sedación paliativa, manejo de crisis)</li>
+                    <li><b>Preparación familiar</b> para cuidados paliativos</li>
+                    <li><b>Emergencia paliativa</b> (médicos y enfermeras) en menos de 3 horas</li>
+                </ul>
+                <a href="#plan-presencia"
+                    class="bg-celestepa text-white font-semibold rounded-full py-2 px-6 hover:bg-moradopa transition">Ver
+                    detalles</a>
+            </div>
+        </div>
+
+        <!-- CTA final -->
+        <div class="text-center mt-16" data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://wa.me/51904728310?text=Hola%20quisiera%20comunicarme%20con%20un%20asesor." target="_blank"
+                class="inline-block bg-white text-moradopa font-semibold px-8 py-4 rounded-full hover:bg-moradopa hover:text-white transition shadow-lg">
+                ¿No sabes qué plan elegir? Contáctanos ahora
+            </a>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+    <script src="src/js/componentes.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botones = document.querySelectorAll("#planes a");
+            botones.forEach((btn) => {
+                const card = btn.closest("[data-plan]");
+                if (!card) return;
+                const titulo = card.querySelector("h3")?.innerText || "este plan";
+                const mensaje = encodeURIComponent(`Necesito más información sobre el plan "${titulo}"`);
+                const url = `https://wa.me/51904728310?text=${mensaje}`;
+                btn.setAttribute("href", url);
+                btn.setAttribute("target", "_blank");
+                btn.classList.add("block", "mx-auto");
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let serviciosData = [
+                { plan: "Plan Abrazo", color: "bg-celesteclaropa", titulo: "Visita médica a domicilio", descripcion: "Un médico acude a tu hogar para evaluar al paciente en un ambiente cómodo y seguro, evitando traslados innecesarios. Ideal para valoraciones iniciales o controles periódicos.", imagen: "assets/img/servicio1.jpg", alt: "Médico evaluando a paciente en su hogar" },
+                { plan: "Plan Abrazo / Plan Ritmo", color: "bg-celesteclaropa", titulo: "Evaluación integral", descripcion: "Recopilamos información médica completa: historia clínica, medicación actual y condiciones generales, creando un panorama claro para una atención personalizada.", imagen: "assets/img/servicio2.jpg", alt: "Consulta médica con toma de datos" },
+                { plan: "Plan Abrazo", color: "bg-celesteclaropa", titulo: "Plan de manejo paliativo", descripcion: "Creamos un esquema de tratamiento con recetas, indicaciones claras y prescripciones especiales, mejorando la calidad de vida del paciente.", imagen: "assets/img/servicio3.jpg", alt: "Revisión de recetas médicas" },
+                { plan: "Plan Ritmo", color: "bg-moradoclaropa", titulo: "Orientación emocional", descripcion: "Sesiones de apoyo emocional que ayudan a gestionar estrés, ansiedad y duelo. Un espacio de escucha activa y acompañamiento.", imagen: "assets/img/servicio4.jpg", alt: "Orientación psicológica a paciente" },
+                { plan: "Plan Nexo", color: "bg-celestepa", titulo: "Control de síntomas complejos y dolor", descripcion: "Evaluamos y ajustamos tratamientos para aliviar dolor y otros síntomas que afectan la calidad de vida del paciente.", imagen: "assets/img/servicio5.jpg", alt: "Paciente recibiendo tratamiento de control del dolor" },
+                { plan: "Plan Nexo", color: "bg-celestepa", titulo: "Administración de medicamentos", descripcion: "Enfermeras especializadas aplican tratamientos en el hogar, asegurando una correcta administración y bienestar del paciente.", imagen: "assets/img/servicio6.jpg", alt: "Administración profesional de medicamentos en domicilio" },
+                { plan: "Plan Presencia", color: "bg-moradopa", titulo: "Manejo avanzado de síntomas", descripcion: "Intervenciones inmediatas en casos complejos como crisis respiratorias, dolor intenso u otros síntomas críticos.", imagen: "assets/img/servicio7.jpg", alt: "Atención médica de emergencia" },
+                { plan: "Plan Presencia", color: "bg-moradopa", titulo: "Atención virtual", descripcion: "Sesiones online con psicólogos o nutricionistas, perfectas para la salud emocional y nutricional del paciente desde cualquier lugar.", imagen: "assets/img/servicio8.jpg", alt: "Atención virtual por videollamada con especialista" },
+                { plan: "Plan Presencia", color: "bg-moradopa", titulo: "Emergencia paliativa", descripcion: "Respuesta inmediata ante emergencias críticas, con médicos y enfermeras llegando al domicilio en menos de 3 horas.", imagen: "assets/img/servicio9.jpg", alt: "Equipo médico llegando al domicilio para atención de emergencia" }
+            ];
+
+            const container = document.getElementById("serviciosContainer");
+            const btnVerMas = document.getElementById("verMasBtn");
+            let mostrados = 0;
+
+            function renderServicios(cantidad) {
+                const slice = serviciosData.slice(mostrados, mostrados + cantidad);
+                slice.forEach((servicio, index) => {
+                    const posicionGlobal = mostrados + index;
+                    const mensajeWhatsApp =
+                        "https://wa.me/51904728310?text=" +
+                        encodeURIComponent(`Quiero más información sobre el servicio de ${servicio.titulo}`);
+                    const estructura =
+                        `<article class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-delay="${index * 100}">
+                            ${(posicionGlobal % 2 === 0)
+                            ? `<div class="space-y-4">
+                                    <h3 class="text-2xl font-bold text-moradopa">${servicio.titulo}</h3>
+                                    <p class="text-lg">${servicio.descripcion}</p>
+                                    <div class="flex md:justify-start justify-center">
+                                        <a href="${mensajeWhatsApp}" target="_blank"
+                                           class="bg-celestepa text-white font-semibold px-8 py-3 rounded-lg hover:bg-moradopa transition">
+                                           Saber más
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block">
+                                    <img src="${servicio.imagen}" alt="${servicio.alt}" class="rounded-xl shadow-lg" />
+                                </div>`
+                            : `<div class="order-2 md:order-1 hidden md:block">
+                                    <img src="${servicio.imagen}" alt="${servicio.alt}" class="rounded-xl shadow-lg" />
+                                </div>
+                                <div class="order-1 md:order-2 space-y-4">
+                                    <h3 class="text-2xl font-bold text-moradopa">${servicio.titulo}</h3>
+                                    <p class="text-lg">${servicio.descripcion}</p>
+                                    <div class="flex md:justify-start justify-center">
+                                        <a href="${mensajeWhatsApp}" target="_blank"
+                                           class="bg-celestepa text-white font-semibold px-8 py-3 rounded-lg hover:bg-moradopa transition">
+                                           Saber más
+                                        </a>
+                                    </div>
+                                </div>`}
+                        </article>`;
+                    container.insertAdjacentHTML("beforeend", estructura);
+                });
+
+                mostrados += cantidad;
+                if (mostrados >= serviciosData.length) btnVerMas.style.display = "none";
+            }
+
+            btnVerMas.addEventListener("click", () => renderServicios(2));
+            renderServicios(3);
+        });
+    </script>
+
+</body>
+
+</html>
